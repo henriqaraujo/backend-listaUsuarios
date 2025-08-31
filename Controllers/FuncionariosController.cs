@@ -1,0 +1,31 @@
+﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
+using web_api_lista_funcionarios.DataContext;
+using web_api_lista_funcionarios.Models;
+using web_api_lista_funcionarios.Services.FuncionarioService;
+
+namespace web_api_lista_funcionarios.Controllers {
+    [ApiController]
+    [Route("api/[controller]")]
+    public class FuncionariosController : ControllerBase {
+
+        //Variável para acessar o banco de dados(AppDbContext) somente para leitura
+        private readonly AppDbContext _appDbContext;
+
+        //Construtor para injetar a dependência do banco de dados
+        public FuncionariosController(AppDbContext appDbContext) {
+            _appDbContext = appDbContext;
+        }
+
+        private readonly IFuncionarioInterface _funcionarioInterface;
+
+        public FuncionariosController(IFuncionarioInterface funcionarioInterface) {
+            _funcionarioInterface = funcionarioInterface;
+        }
+
+        [HttpGet]
+        public async Task<ActionResult<ServiceResponse<List<FuncionarioModel>>>> GetFuncionarios() { 
+            return Ok(await _funcionarioInterface.GetFuncionarios());
+        }
+    }
+}

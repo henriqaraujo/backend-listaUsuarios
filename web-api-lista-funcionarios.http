@@ -1,0 +1,6 @@
+@web_api_lista_funcionarios_HostAddress = http://localhost:5212
+
+GET {{web_api_lista_funcionarios_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

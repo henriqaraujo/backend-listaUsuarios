@@ -1,0 +1,12 @@
+[
+  {
+    "ContainingType": "web_api_lista_funcionarios.Controllers.FuncionariosController",
+    "Method": "Get",
+    "RelativePath": "api/Funcionarios",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]
