@@ -6,6 +6,6 @@ namespace web_api_lista_funcionarios.DataContext {
     public class AppDbContext : DbContext{
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) {}
 
-        public DbSet<FuncionarioModel> FuncionariosWebApi { get; set; }
+        public DbSet<FuncionarioModel> Funcionarios { get; set; }
     }
 }

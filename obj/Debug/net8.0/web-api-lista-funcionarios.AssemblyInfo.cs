@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("web-api-lista-funcionarios")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+70cbce1a1b173851c42c3342e34b4b9750b7673e")]
 [assembly: System.Reflection.AssemblyProductAttribute("web-api-lista-funcionarios")]
 [assembly: System.Reflection.AssemblyTitleAttribute("web-api-lista-funcionarios")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
