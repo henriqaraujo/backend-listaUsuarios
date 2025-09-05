@@ -18,6 +18,11 @@ builder.Services.AddScoped<IFuncionarioInterface, FuncionarioService>();
 var connectionString = builder.Configuration.GetConnectionString("AppDbConnectionString");
 builder.Services.AddDbContext<AppDbContext>(options => options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString)));
 
+builder.Services.AddCors(options => {
+    options.AddPolicy("usuariosApp", builder => {
+        builder.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod();
+    });
+});
 
 var app = builder.Build();
 
@@ -27,6 +32,8 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+app.UseCors("usuariosApp");
 
 app.UseHttpsRedirection();
 

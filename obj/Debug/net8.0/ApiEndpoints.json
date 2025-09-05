@@ -1,12 +1,152 @@
 [
   {
     "ContainingType": "web_api_lista_funcionarios.Controllers.FuncionariosController",
-    "Method": "Get",
+    "Method": "GetFuncionarios",
     "RelativePath": "api/Funcionarios",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [],
-    "ReturnTypes": []
+    "ReturnTypes": [
+      {
+        "Type": "web_api_lista_funcionarios.Models.ServiceResponse\u00601[[System.Collections.Generic.List\u00601[[web_api_lista_funcionarios.Models.FuncionarioModel, web-api-lista-funcionarios, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "web_api_lista_funcionarios.Controllers.FuncionariosController",
+    "Method": "CreateFuncionario",
+    "RelativePath": "api/Funcionarios",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "novoFuncionario",
+        "Type": "web_api_lista_funcionarios.Models.FuncionarioModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "web_api_lista_funcionarios.Models.ServiceResponse\u00601[[System.Collections.Generic.List\u00601[[web_api_lista_funcionarios.Models.FuncionarioModel, web-api-lista-funcionarios, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "web_api_lista_funcionarios.Controllers.FuncionariosController",
+    "Method": "UpdateFuncionario",
+    "RelativePath": "api/Funcionarios",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "funcionarioAtualizado",
+        "Type": "web_api_lista_funcionarios.Models.FuncionarioModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "web_api_lista_funcionarios.Models.ServiceResponse\u00601[[System.Collections.Generic.List\u00601[[web_api_lista_funcionarios.Models.FuncionarioModel, web-api-lista-funcionarios, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "web_api_lista_funcionarios.Controllers.FuncionariosController",
+    "Method": "GetFuncionarioById",
+    "RelativePath": "api/Funcionarios/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "web_api_lista_funcionarios.Models.ServiceResponse\u00601[[System.Collections.Generic.List\u00601[[web_api_lista_funcionarios.Models.FuncionarioModel, web-api-lista-funcionarios, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "web_api_lista_funcionarios.Controllers.FuncionariosController",
+    "Method": "DeleteFuncionario",
+    "RelativePath": "api/Funcionarios/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "web_api_lista_funcionarios.Models.ServiceResponse\u00601[[System.Collections.Generic.List\u00601[[web_api_lista_funcionarios.Models.FuncionarioModel, web-api-lista-funcionarios, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "web_api_lista_funcionarios.Controllers.FuncionariosController",
+    "Method": "InativaFuncionario",
+    "RelativePath": "api/Funcionarios/InativaFuncionario",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "web_api_lista_funcionarios.Models.ServiceResponse\u00601[[System.Collections.Generic.List\u00601[[web_api_lista_funcionarios.Models.FuncionarioModel, web-api-lista-funcionarios, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   }
 ]

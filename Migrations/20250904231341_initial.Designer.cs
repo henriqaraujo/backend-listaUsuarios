@@ -12,8 +12,8 @@ using web_api_lista_funcionarios.DataContext;
 namespace web_api_lista_funcionarios.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20250831211032_Inicial")]
-    partial class Inicial
+    [Migration("20250904231341_initial")]
+    partial class initial
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -58,7 +58,7 @@ namespace web_api_lista_funcionarios.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("FuncionariosWebApi");
+                    b.ToTable("Funcionarios");
                 });
 #pragma warning restore 612, 618
         }

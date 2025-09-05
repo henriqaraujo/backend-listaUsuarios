@@ -55,7 +55,7 @@ namespace web_api_lista_funcionarios.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("FuncionariosWebApi");
+                    b.ToTable("Funcionarios");
                 });
 #pragma warning restore 612, 618
         }

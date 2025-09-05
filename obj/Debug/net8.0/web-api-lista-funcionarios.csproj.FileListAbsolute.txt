@@ -135,3 +135,4 @@ C:\Users\Henrique\source\repos\web-api-lista-funcionarios\web-api-lista-funciona
 C:\Users\Henrique\source\repos\web-api-lista-funcionarios\web-api-lista-funcionarios\obj\Debug\net8.0\web-api-lista-funcionarios.genruntimeconfig.cache
 C:\Users\Henrique\source\repos\web-api-lista-funcionarios\web-api-lista-funcionarios\obj\Debug\net8.0\ref\web-api-lista-funcionarios.dll
 C:\Users\Henrique\source\repos\web-api-lista-funcionarios\web-api-lista-funcionarios\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\Henrique\source\repos\web-api-lista-funcionarios\web-api-lista-funcionarios\obj\Debug\net8.0\web-api-lista-funcionarios.sourcelink.json

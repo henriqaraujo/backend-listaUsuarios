@@ -9,13 +9,13 @@ namespace web_api_lista_funcionarios.Controllers {
     [Route("api/[controller]")]
     public class FuncionariosController : ControllerBase {
 
-        //Variável para acessar o banco de dados(AppDbContext) somente para leitura
+        /*Variável para acessar o banco de dados(AppDbContext) somente para leitura
         private readonly AppDbContext _appDbContext;
 
         //Construtor para injetar a dependência do banco de dados
         public FuncionariosController(AppDbContext appDbContext) {
             _appDbContext = appDbContext;
-        }
+        }*/
 
         private readonly IFuncionarioInterface _funcionarioInterface;
 
